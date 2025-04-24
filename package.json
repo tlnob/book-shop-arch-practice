@@ -1,0 +1,32 @@
+{
+    "name": "book-shop-arch-practice",
+    "version": "1.0.0",
+    "author": "Thais Nobre",
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {
+        "@types/express": "^5.0.1",
+        "@types/node": "^22.14.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/main.ts",
+        "lint": "eslint --fix src test",
+        "dev": "ts-node main.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlnob/book-shop-arch-practice.git"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tlnob/book-shop-arch-practice/issues"
+    },
+    "homepage": "https://github.com/tlnob/book-shop-arch-practice#readme"
+}
