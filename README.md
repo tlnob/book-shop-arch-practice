@@ -20,8 +20,7 @@ The project is organized into three main layers:
 ### 3. **Infrastructure Layer**
 - **Purpose**: Contains the implementation details, such as database access, web frameworks, or external APIs.
 - **Components**:
-  - `InMemoryBookRepository`: A simple in-memory implementation of the `BookRepository` interface.
-  - `expressApp`: The web server implementation using Express.js.
+  - `DBRepository`: A simple in-memory implementation of the `BookRepository` interface.
 
 ## Installation
 
