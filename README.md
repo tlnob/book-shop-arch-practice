@@ -8,28 +8,22 @@ This project demonstrates the implementation of a **Book Shop** application usin
    ```bash
    git clone https://github.com/tlnob/book-shop-arch-practice.git
    cd book-shop-arch-practice
-
 2. Install:
    ```bash
    npm install
-
 3. Create a .env file and fill the secret values
     ```bash
     DATABASE_URL=
     POSTGRES_USER=
     POSTGRES_PASSWORD=
     POSTGRES_DB=
-
 4. Run Prisma commands: 
-  ```bash
+   ```bash
     npx prisma migrate dev
     npx prisma db seed
-
 5. Run Docker-compose
-  ```bash
-  docker-compose up -d
-
-
+    ```bash
+    docker-compose up -d
 ## Project Structure
 
 The project is organized into three main layers:
