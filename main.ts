@@ -1,11 +1,13 @@
 import express, { Express, Request, Response } from 'express';
 import { BookService } from './application/use-cases/bookService';
-import { DBRepository } from './infra/repository/DBRepository';
+import { DBRepository } from './infra/repository/persistance';
+import { PrismaClient } from '@prisma/client'
 
 const app: Express = express();
 const port = 3000;
 
-const bookRepository = new DBRepository({});
+const prisma = new PrismaClient()
+const bookRepository = new DBRepository(prisma);
 const bookService = new BookService(bookRepository);
 
 app.get('/book/:id', (req: Request, res: Response) => {

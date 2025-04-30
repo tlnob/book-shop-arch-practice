@@ -1,4 +1,4 @@
-import { BookDTO } from "../entities/Book";
+import { Book, BookDTO } from "../entities/Book";
 
 export interface BookRepository {
     getBookById(id: string): Promise<BookDTO>;

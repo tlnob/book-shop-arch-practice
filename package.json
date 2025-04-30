@@ -3,14 +3,20 @@
     "version": "1.0.0",
     "author": "Thais Nobre",
     "dependencies": {
+        "@prisma/client": "^6.7.0",
         "express": "^5.1.0"
+    },
+    "prisma": {
+        "seed": "ts-node prisma/seed.ts"
     },
     "description": "",
     "main": "index.js",
     "devDependencies": {
         "@types/express": "^5.0.1",
-        "@types/node": "^22.14.1",
+        "@types/node": "^22.15.3",
+        "prisma": "^6.7.0",
         "ts-node": "^10.9.2",
+        "tsx": "^4.19.4",
         "typescript": "^5.8.3"
     },
     "scripts": {

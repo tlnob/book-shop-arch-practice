@@ -2,6 +2,34 @@
 
 This project demonstrates the implementation of a **Book Shop** application using **Hexagonal Architecture** (Ports and Adapters).
 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tlnob/book-shop-arch-practice.git
+   cd book-shop-arch-practice
+
+2. Install:
+   ```bash
+   npm install
+
+3. Create a .env file and fill the secret values
+    ```bash
+    DATABASE_URL=
+    POSTGRES_USER=
+    POSTGRES_PASSWORD=
+    POSTGRES_DB=
+
+4. Run Prisma commands: 
+  ```bash
+    npx prisma migrate dev
+    npx prisma db seed
+
+5. Run Docker-compose
+  ```bash
+  docker-compose up -d
+
+
 ## Project Structure
 
 The project is organized into three main layers:
@@ -22,21 +50,6 @@ The project is organized into three main layers:
 - **Components**:
   - `InMemoryBookRepository`: A simple in-memory implementation of the `BookRepository` interface.
   - `expressApp`: The web server implementation using Express.js.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/tlnob/book-shop-arch-practice.git
-   cd book-shop-arch-practice
-
-2. Install:
-   ```bash
-   npm install
-
-3. Run:
-   ```bash
-   npm run dev
 
 Endpoints:
 

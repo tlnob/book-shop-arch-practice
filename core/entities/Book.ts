@@ -4,7 +4,9 @@ export class Book {
     public title: string,
     public author: string,
     public year: number,
-    public genre: string
+    public genre: string,
+    public summary: string
+
   ) {}
 
   getTitle(): string {
@@ -22,4 +24,7 @@ export interface BookDTO {
   author?: string;
   year?: number;
   genre?: string;
+  summary?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
